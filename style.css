@@ -795,3 +795,133 @@ strong {
 @media (max-width: 600px) {
   .hero-logo { max-width: 90%; }
 }
+
+/* ============== IMAGES / FIGURES ============== */
+
+/* About 區的主視覺 banner (迪斯可球茶藝音樂會橫式) */
+.about-banner {
+  margin: 0 0 2.5rem;
+  width: 100%;
+  position: relative;
+}
+.about-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+}
+.about-banner figcaption {
+  margin-top: 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: lowercase;
+  line-height: 1.5;
+}
+.about-banner figcaption em {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* Selected Works 雙圖並排 */
+.work-image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0.6rem;
+  max-width: 720px;
+}
+.work-image-pair figure {
+  margin: 0;
+}
+.work-image-pair img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  display: block;
+  border: 1px solid var(--line);
+}
+@media (max-width: 600px) {
+  .work-image-pair {
+    grid-template-columns: 1fr;
+  }
+  .work-image-pair img {
+    aspect-ratio: auto;
+  }
+}
+
+/* 圖片下方的攝影師 credit (跨多張共用) */
+.image-credit {
+  font-family: var(--mono) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.08em !important;
+  color: var(--muted) !important;
+  text-transform: lowercase;
+  margin-top: 0.6rem !important;
+  margin-bottom: 1rem !important;
+  max-width: 720px;
+}
+
+/* Selected Works 區的作品照 */
+.work-image {
+  margin: 1.5rem 0;
+  max-width: 720px;
+}
+.work-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+}
+.work-image figcaption {
+  margin-top: 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: lowercase;
+}
+
+/* 響應式: 手機上肖像縮小 */
+@media (max-width: 880px) {
+  .about-portrait { max-width: 100%; }
+}
+
+/* Devotion 的兩個關鍵問句 - 視覺上更醒目 */
+.writing-question {
+  font-size: 1.2rem !important;
+  line-height: 1.4;
+  color: var(--ink);
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  border-left: 3px solid var(--vermilion);
+  margin: 1.5rem 0 !important;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+.writing-question em {
+  font-style: italic;
+}
+.writing-question strong {
+  background: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.zh-question {
+  border-left: 3px solid var(--vermilion);
+  padding-left: 1.2rem;
+  margin: 1.2rem 0 !important;
+  font-size: 1rem !important;
+}
+
+/* Spotify 嵌入 */
+.embed-spotify {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  max-width: 720px;
+}
+.embed-spotify iframe {
+  width: 100%;
+}
